@@ -1,0 +1,187 @@
+---
+title: "仿真软件市场分析"
+date: "2026-05-05"
+category: "教程"
+tags: ["工具", "效率", "VS Code"]
+excerpt: "分享我日常使用的开发工具和配置，包括终端、编辑器、插件和快捷键设置。"
+---
+
+# **仿真软件市场分析：结构、多体动力学、流体与系统仿真软件概览及中国本土发展**
+
+## **执行摘要**
+
+全球仿真软件市场，特别是计算机辅助工程（CAE）领域，主要由少数几家国际巨头主导，如Ansys、达索系统（Dassault Systèmes）和西门子（Siemens）。这些公司凭借其在结构、多体动力学和流体仿真等领域的综合性产品套件、深厚的研发实力以及广泛的应用组合，持续保持市场领先地位。
+
+整个仿真软件市场预计将实现强劲增长，其驱动力在于各行业对提高效率、降低成本和加速产品开发的需求日益增长。其中，基于云的解决方案作为关键增长引擎，提供了卓越的可扩展性并有效降低了IT基础设施成本。
+
+中国正在积极发展其本土仿真软件能力，涌现出十沣科技、积鼎科技、霍莱沃和北京大学重庆大数据研究院等一批在结构、多体动力学和流体仿真领域取得进展的公司。尽管中国本土解决方案在整体市场中所占份额仍较小，但“国产化替代”的强劲推动表明了中国在减少对外国技术依赖方面的战略优先地位。
+
+当前市场的主要发展趋势包括云技术的广泛应用、人工智能（AI）和机器学习（ML）的深度融合，以及数字孪生技术的兴起。这些趋势正在重塑仿真领域，使工程师能够实现更快的迭代设计、更高效的协作，并获得产品全生命周期中的实时性能洞察。
+
+## **仿真软件简介**
+
+### **CAE的定义与重要性**
+
+计算机辅助工程（CAE）是指利用先进的计算机软件辅助完成各项工程分析任务，包括产品和工艺在整个生命周期内的仿真、验证和优化。在现代工业中，CAE工具不可或缺，它们能够实现虚拟原型设计，显著减少昂贵的物理测试需求，加速产品上市时间，并通过准确预测产品在各种操作条件下的实际行为来提升整体产品质量和安全性 1。
+
+### **仿真软件分类**
+
+本报告将仿真软件分为以下四个主要类别，以响应用户提出的具体需求：
+
+* **结构仿真软件：** 此类软件主要用于分析产品、组件和工艺在机械载荷、热条件及其他物理应力下的响应。它主要采用有限元法（FEM）等数值方法来预测变形、应力、应变和疲劳寿命 1。  
+* **多体动力学（MBD）仿真软件：** 这种软件专注于模拟复杂机械系统中相互连接的刚体和柔体的运动及受力情况。它对于理解机器人、车辆悬架和机械设备等机构的动态行为至关重要 2。  
+* **流体仿真软件（计算流体力学 \- CFD）：** CFD软件专门分析液体和气体的行为。这包括在各种工程应用中模拟流体模式、传热、质量传输以及复杂的多相相互作用 4。  
+* **系统仿真软件：** 这一高级类别涉及对复杂集成系统动态性能的建模和优化，通常需要耦合多个物理领域（例如，机械、电气、流体、热力学）和控制逻辑，以理解系统的整体行为 6。
+
+## **全球仿真软件格局**
+
+### **结构仿真软件**
+
+* **Ansys：** 作为全球领先的仿真软件提供商，Ansys提供一套全面的结构仿真工具。其核心产品包括**Ansys Mechanical**，这是一款多功能、通用型工具，拥有强大的求解器技术，能够处理高度非线性仿真、极端变形问题以及多物理场耦合 8。Ansys结构产品系列下的其他专业工具包括用于冲击和爆炸分析的  
+  **Ansys Autodyn**，用于高度非线性瞬态动力学、气体流动、粘合剂和电池仿真的**Ansys LS-DYNA**，用于金属冲压的**Ansys Forming**，用于耐久性和疲劳分析的**Ansys nCode DesignLife**，以及用于电子产品可靠性分析的**Ansys Sherlock** 8。Ansys还通过MCalibration和MDS与Ansys Granta材料信息系统集成，方便用户访问材料数据 8。  
+* **达索系统 SIMULIA：** 该品牌提供基于有限元法（FEM）的先进结构仿真技术，能够深入理解产品在真实世界条件下的性能 1。  
+  * **Abaqus：** 作为线性与非线性有限元分析领域的市场和技术领导者，Abaqus提供隐式和显式两种求解技术 1。Abaqus以其广泛的单元类型库和材料模型而闻名，支持从金属到橡胶、聚合物以及岩土材料等多种材料的仿真 1。它拥有强大的多物理场能力，能够独立、顺序耦合或完全耦合地模拟导热、对流传热、质量扩散、声学、压电和电化学等多种物理现象 1。该软件的模块化和灵活性使其能够模拟几乎任何物理上合理的单元、材料、过程和载荷序列组合，并能高效处理大型仿真模型 1。  
+  * **fe-safe：** 专门用于有限元模型耐久性分析的软件 1。  
+  * **Tosca：** 专注于优化，通过三维形状和拓扑优化实现减重和提高强度、刚度 1。  
+* **集成套件与生态系统的优势：** 领先的结构仿真软件提供商Ansys和达索系统，其战略不仅在于提供独立的求解器，更在于提供集成化的套件和平台（例如Ansys Workbench、达索系统3DEXPERIENCE平台）。这种方法将结构、热力学、多物理场和优化等各种分析类型统一起来，并简化了从初始设计到最终分析的工作流程。通过将有限元分析（FEM）、耐久性分析、优化和增材制造仿真等多种仿真能力整合到单一环境中，这些供应商减少了数据转换问题，改善了不同工程团队之间的协作，并促进了更复杂的多物理场仿真。这种集成化的方法有助于客户降低风险，加速产品上市，从而增强客户粘性，并为竞争对手设置了更高的进入壁垒。这表明市场更青睐能够管理现代产品开发日益增长的复杂性的全面、互联的解决方案，而非一系列分散的工具。
+
+### **多体动力学（MBD）仿真软件**
+
+* **Ansys Motion：** Ansys Motion被定位为基于先进多体动力学求解器的第三代工程解决方案，现已直接集成到Ansys Mechanical界面中 2。它能够快速准确地分析刚体和柔体，通过对整个机械系统的分析实现对物理事件的精确评估 2。其主要功能包括MBD Pro（用于刚体系统）、FE Dynamics（用于混合刚体/柔体分析）、模态柔体（Modal Flex）、线性分析、疲劳分析，以及与MATLAB/Simulink和FMI进行协同仿真的接口 2。专用的汽车工具包、传动系统工具包、链条和皮带工具包以及履带工具包，进一步促进了行业特定应用 2。  
+* **MathWorks Simscape Multibody：** 该软件前身为SimMechanics，提供了一个专门用于机器人、车辆悬架和飞机起落架等复杂三维机械系统的多体仿真环境 3。它允许用户使用代表刚体、关节、约束、力元和传感器的直观模块构建模型 3。其显著能力在于能够导入完整的CAD装配体，包括质量、惯性、关节和三维几何，并将电子、液压、气动及其他物理系统直接连接到机械模型 3。它还支持建模接触力、柔性体，并与MATLAB和Simulink无缝集成，用于参数化、控制系统设计以及生成用于硬件在环（HIL）测试的C代码 3。  
+* **MSC Adams (Hexagon)：** MSC Adams（机械系统自动动力学分析）被广泛认为是首屈一指的多体动力学仿真软件，使工程师能够分析机械系统内复杂的相互作用 9。它通过模拟运动、力以及机械系统中的振动来优化设计，从而在物理原型创建之前进行设计优化 10。其核心功能包括动态分析、用于创建刚体和柔体精确模型的综合建模工具、与有限元分析（FEA）工具的无缝集成以进行应力与变形分析、用于复杂系统高效仿真的高级求解器，以及广泛的组件库 10。Adams/Car和Adams/Tire等模块被广泛用于车辆结构和悬架分析 9。Hexagon还提供Romax套件（Concept、Enduro、Energy、Evolve、Spin），进一步增强其MBD产品在传动系统和轴承分析方面的专业能力 11。  
+* **多物理场与控制系统集成：** 现代多体动力学（MBD）软件正日益超越纯粹的机械分析，强调与其他物理领域（如电气、液压、热力学）以及复杂控制系统的无缝集成。这种发展反映了机电一体化系统日益增长的复杂性。现代机械系统（如机器人、电动汽车、工业机械）的行为受到其电气执行器、液压组件和嵌入式控制算法的深刻影响。如果仿真将机械动力学与这些相互作用的系统隔离开来，将导致不完整或不准确的结果。通过集成这些多学科方面，MBD软件使工程师能够进行全面的“系统级性能”测试 3，并实现“端到端工作流程” 2。生成用于硬件在环（HIL）测试的C代码的能力 3进一步强调了仿真与控制系统开发和验证之间的关键联系，允许在构建物理原型之前对嵌入式控制器进行虚拟测试。这一趋势标志着传统机械工程与电子、软件和控制工程的融合，形成了机电一体化领域。仿真工具必须适应这一现实，使工程师能够整体设计、分析和优化整个机电一体化系统，从而实现更稳健和高效的产品开发。
+
+### **流体仿真软件（CFD）**
+
+* **ANSYS Fluent：** Ansys Fluent是一款领先的计算流体力学（CFD）软件，以其先进的物理建模能力和高精度而闻名 4。它提供了一个现代化的、用户友好的界面，通过单一窗口工作流程简化了从前处理到后处理的CFD过程 5。Fluent支持广泛的流体动力学现象，包括单相和多相流（气液、液固、颗粒流、DEM）、层流和湍流（包括GEKO等模型），以及各种传热模式（共轭传热） 5。它还具备燃烧、声学（FW-H声学）和流固耦合（FSI）的能力 5。其应用范围广泛，涵盖燃气轮机、混合过程、换热器、电池热管理和电子冷却 5。Fluent还针对高性能计算（HPC）进行了高度优化，支持在CPU和GPU上进行网格划分和求解的并行能力 5。  
+* **SimScale：** SimScale为流体动力学、结构力学和热力学提供了一个引人注目的云端解决方案 4。SimScale的核心优势在于其云原生平台，该平台消除了计算能力有限、可访问性差和成本高昂的障碍 12。它利用基于GPU的求解器，特别是那些使用格点玻尔兹曼方法（LBM）的求解器，以无与伦比的速度实现高精度 13。它支持不可压缩流和可压缩流、层流和湍流、多相流（使用VOF方法）以及流固耦合 13。其云环境促进了轻松协作和任何规模仿真的无与伦比的可扩展性 12。  
+* **COMSOL Multiphysics：** COMSOL是多物理场仿真领域的知名品牌，提供强大的单物理场和全耦合多物理场建模工具 4。其在不同工程应用和物理现象中保持一致的用户界面增强了用户友好性 4。它提供从几何定义到结果评估的全面工作流程，最新版本具有更快的求解器和数据驱动的代理模型 4。COMSOL允许用户耦合任意数量的物理现象，对模型的所有方面进行完全控制，并支持用户自定义物理描述 14。  
+* **Autodesk CFD：** 专为工程师和分析师设计，用于预测液体和气体的性能 15。它提供可定制的仿真设置、全面的传热和流体流动分析，并支持通过API进行脚本编写和自动化 15。其应用包括电子冷却、数据中心设计、照明设计、机械和阀门以及用于AEC/MEP的HVAC设计 15。它旨在提高能源效率、降低故障风险并最大限度地减少物理原型制作 15。  
+* **FLOW-3D (Flow Science)：** FLOW-3D是一款高精度的CFD软件，专门解决瞬态、自由表面问题，为工程师提供了一个完整且多功能的CFD仿真平台 16。其主要特点包括专有的TruVOF（流体体积）技术，用于精确跟踪流体表面位置；“自由网格划分”技术，结合了简单矩形网格的优点和变形、贴体网格的灵活性；以及FAVOR™（分数面积体积障碍物表示）方法，用于在矩形网格内定义复杂的几何区域 16。FLOW-3D服务于微流控、增材制造、喷墨打印、激光焊接和汽车燃油晃动等广泛行业 16。  
+* **SOLIDWORKS Flow Simulation (达索系统)：** 这是一款直观的CFD解决方案，完全嵌入SOLIDWORKS三维CAD中，允许用户快速轻松地模拟液体和气体流经和围绕其设计的情况，以计算产品性能和能力 17。它通过利用熟悉的SOLIDWORKS界面、设计数据重用和多参数优化能力，提供了易用性 17。它执行全面的流体流动分析（可压缩/不可压缩，亚音速到超音速）和传热分析（传导、对流、共轭传热），并具有用于HVAC和电子冷却的专用模块 17。  
+* **Siemens Simcenter STAR-CCM+：** 该软件提供广泛的建模功能，不仅限于基本的流体流动和传热，还包括单相和多相流、颗粒动力学、反应流、流固耦合、气动声学、流变学和电动力学建模 18。它具有集成的CFD数据分析功能，用于后处理和可视化，包括用于逼真动画的尖端光线追踪技术和仿真结果的虚拟现实（VR）探索 18。它在建模复杂工业多相应用方面尤其强大 19。  
+* **Altair CFD：** 提供一套全面的工具来解决各种流体力学问题 20。它提供多种求解器，包括通用Navier-Stokes（NS）求解器、用于自由表面润滑/晃动/混合的平滑粒子流体动力学（SPH）求解器，以及用于空气动力学和气动声学的格点玻尔兹曼方法（LBM）求解器 20。Altair CFD利用GPU技术进行高性能计算，通过Altair HyperWorks提供高效的工作流程，并支持用于颗粒流体系统的耦合CFD-DEM（离散元方法）仿真 20。  
+* **云原生与HPC加速推动CFD普及：** CFD市场正迅速向云原生解决方案发展，并积极利用高性能计算（HPC），特别是GPU加速，以显著缩短仿真时间并增强可访问性。传统的CFD仿真以计算密集型著称，通常需要大量的本地硬件投资和漫长的运行时间。云原生平台直接解决了这些障碍，提供了“随时随地从浏览器即时访问”和“无与伦比的可扩展性” 12。GPU加速，特别是对于LBM等高度并行化的方法，显著提高了计算速度，将仿真时间从“几天缩短到几秒” 12。这种技术转变有效地“普及”了高保真仿真，使以前缺乏必要基础设施的更广泛的工程师、小型公司甚至个人用户都能进行高级CFD分析。这一趋势正在从根本上重塑CFD软件的商业模式，从传统的永久许可证和资本密集型硬件转向更灵活的、基于订阅的云服务。这促进了更快的创新周期，实现了更敏捷的设计迭代，并促进了无缝协作，特别是对于地理分散的团队。
+
+### **系统仿真软件**
+
+* **Siemens Simcenter Amesim：** 这是一款领先的集成化、可扩展系统仿真平台，专为机电一体化系统设计 6。它使设计工程师能够从早期开发阶段到最终验证，虚拟评估和优化系统性能 6。Simcenter Amesim提供全面的电气、流体、机械和推进系统仿真能力，可优化动态性能、分析功耗并验证电气设备的控制律 6。它支持多维度动态仿真（1D、2D和3D），有助于创建用于实时数字孪生应用的降阶模型（ROM），并包含强大的系统仿真模型管理功能，如Git集成，以支持协作工作流程 6。它是西门子Xcelerator产品组合的一部分 6。  
+* **AnyLogic：** AnyLogic被公认为领先的商业应用仿真建模软件，全球超过40%的财富100强公司使用它来获取更深入的洞察并优化复杂的系统和流程 7。其独特优势在于其多方法建模方法，允许用户在单一模型中结合离散事件、基于代理和系统动力学方法 7。这种灵活性使得能够仿真任何复杂度的业务系统。AnyLogic提供广泛的动画和可视化功能（2D/3D图形、GIS地图集成），提供行业特定库（流程建模、流体、铁路、行人、道路交通、物料搬运），并通过AnyLogic Cloud强力支持云端仿真 7。它也是数字孪生开发和集成人工智能（AI）以在虚拟环境中训练和测试AI模型的强大工具 7。  
+* **整体系统设计与数字孪生赋能：** 系统仿真软件正在发展以支持整体设计，并作为数字孪生技术的基础。这涉及整合多个物理领域和运营数据，以优化复杂系统在其整个生命周期中的表现，从初始设计到在役运营。现代工程系统本质上是多学科的，涉及机械、电气、流体和控制组件之间复杂的相互作用。模拟这些相互作用对于准确的性能预测和优化至关重要。数字孪生概念通过创建一个虚拟副本，可以利用其实体对应物的实时运营数据进行持续更新，从而扩展了这一理念。这使得持续监控、预测性维护以及在无风险的虚拟环境中测试“假设”场景成为可能 7。降阶模型（ROM）的开发 6是实现这一目标的关键，因为它允许将复杂的高保真模型简化以进行实时操作，从而使数字孪生在计算上可行。这一趋势代表着从传统设计时仿真向持续、运营仿真的一次重大范式转变。它使得在整个产品生命周期中实现“更好的决策和改进的运营卓越性”成为可能 6，有效地模糊了设计、制造和在役运营之间的界限。人工智能（AI）日益增长的集成 7进一步增强了这些数字孪生的智能和预测能力。
+
+## **市场概况与销售额**
+
+### **整体CAE与仿真市场规模**
+
+* **计算机辅助工程（CAE）市场**在2024年的估值为**152.4亿美元**，预计到2025年将增长至**168.7亿美元**，并在预测期（2025-2034年）内以5.51%的复合年增长率（CAGR）增长，到2034年达到**267.3亿美元** 22。  
+* 值得注意的是，另一份市场报告对**CAE市场**的估值较低，预计2024年为**65.545亿美元**，2025年增长至**70.723亿美元**，并预计到2033年将达到**129.937亿美元**，复合年增长率（2025-2033年）为7.9% 23。这种差异可能源于不同研究机构对市场定义和范围的界定不同。  
+* CAE软件市场中的特定细分领域表现出强劲增长：**有限元分析（FEA）市场**预计将从2023年的42亿美元增长到2032年的63亿美元（复合年增长率5.2%），而**计算流体力学（CFD）市场**预计将从2023年的31亿美元增长到2032年的48亿美元（复合年增长率5.9%） 22。  
+* 更广泛的**全球仿真软件市场**（包括CAE以及其他仿真类型，如业务流程仿真）在2024年创造了**216亿美元**的收入，预计2025年将达到**251亿美元**，并有望在2032年强劲扩张至**561亿美元**，复合年增长率高达12.9% 24。  
+* **部署模式：** 云端解决方案是主要的增长动力。CAE市场中云端细分市场预计将占据最大份额，到2024年达到86亿美元，复合年增长率为6.5%，优于本地部署细分市场4.5%的复合年增长率 22。这一趋势在更广泛的仿真软件市场中也保持一致，预计到2032年，云端解决方案将占市场收入的167亿美元，而本地部署为394亿美元，这表明了对软件解决方案灵活性和可扩展性的明显偏好 24。  
+* **区域洞察：** 北美地区预计将保持最大的市场份额，在2023年占全球收入的约36.5%，其次是欧洲（约28.2%）。亚太（APAC）地区预计将是增长最快的市场，在2023-2032年期间复合年增长率约为7.2% 22。  
+* **关键行业：** 汽车行业仍然是CAE解决方案最大的采用者，占据超过35%的市场份额。这一采用率的提高还得益于汽车行业向更可持续、更节能产品的持续转型 23。汽车、航空航天和消费电子领域超过60%的公司正在积极使用CAE工具来优化产品设计和性能 23。
+
+**表1：全球CAE和仿真软件市场预测**
+
+| 市场细分 | 2024年市场价值 (亿美元) | 2025年市场价值 (亿美元) | 22/23/34年市场价值 (亿美元) | 复合年增长率 (CAGR) (%) | 主要来源 |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| 整体CAE市场 | 152.4 | 168.7 | 267.3 (2034) | 5.51 (2025-2034) | MarketResearchFuture 22 |
+| 整体CAE市场 (替代来源) | 65.545 | 70.723 | 129.937 (2033) | 7.9 (2025-2033) | GlobalGrowthInsights 23 |
+| 全球仿真软件市场 | 216 | 251 | 561 (2032) | 12.9 | Market.us 24 |
+| CAE FEA市场 | 42 (2023) | N/A | 63 (2032) | 5.2 | MarketResearchFuture 22 |
+| CAE CFD市场 | 31 (2023) | N/A | 48 (2032) | 5.9 | MarketResearchFuture 22 |
+
+### **主要全球仿真软件供应商年度收入**
+
+这些收入数据清晰地表明，少数几家大型、成熟的公司主导着全球仿真软件市场。这些公司通常通过多元化的产品组合和战略性收购来实现市场领导地位，从而能够提供跨多个仿真领域的全面集成解决方案。例如，Ansys的年收入超过25亿美元，达索系统超过67亿美元，西门子数字工业软件超过50亿美元，Hexagon AB超过54亿美元，Autodesk超过61亿美元，MathWorks也达到12.5亿美元 25。这些公司的巨额收入和广泛的产品供应表明市场高度集中。这些主导企业不仅销售独立的软件工具，还在构建和扩展集成平台。收购是他们迅速扩展能力、获取新技术和扩大市场覆盖范围的关键战略，从而巩固了其既有优势。这种多元化使他们能够服务更广泛的行业，满足从初始设计和工程到制造和在役运营的各种客户需求。这种市场结构为新的或较小的参与者设置了高进入壁垒，特别是在高端通用仿真领域。新进入者通常需要专注于高度专业化的利基应用或颠覆性技术（例如，SimScale所示的云原生方法）才能站稳脚跟。对于客户而言，这种整合可以带来单一供应商满足多样化仿真需求的好处，简化采购并确保不同分析类型之间更好的集成。
+
+**表2：领先全球仿真软件供应商年度收入（最新可用）**
+
+| 公司名称 | 最新报告年度收入 (亿美元) | 报告期/年份 | 主要仿真软件产品/品牌 |
+| :---- | :---- | :---- | :---- |
+| Ansys | 25.83 | 截至2025年3月31日的12个月 25 | Ansys Mechanical, Ansys Motion, Ansys Fluent |
+| 达索系统 (Dassault Systèmes) | 67.5 | 截至2025年3月31日的12个月 26 | SIMULIA Abaqus, SOLIDWORKS Flow Simulation |
+| 西门子数字工业软件 (Siemens Digital Industries Software) | \>50 | 年度收入 27 | Simcenter Amesim, Simcenter STAR-CCM+ |
+| Hexagon AB | 54.2 | 截至2025年3月31日的12个月 28 | MSC Adams, Romax |
+| Autodesk | 61.3 | 2025财年 29 | Autodesk CFD |
+| Altair Engineering | 6.6 | 最新财报 (TTM) 31 | Altair CFD |
+| MathWorks | 12.5 | 2023年 30 | Simscape Multibody |
+
+## **中国本土仿真软件格局**
+
+### **中国CAE市场总体背景**
+
+中国CAE市场在2022年的估值约为**25.9亿元人民币**，2018年至2022年间的复合年增长率为13.09% 32。中国本土CAE市场份额有所增长，从2016年的7%上升到
+
+**2022年的16.2%** 32。尽管本土份额有所增长，但中国工业软件，特别是CAE等高端研发设计类别，仍然高度依赖进口。本土产品主要用于工业机理简单、系统功能单一、复杂度较低的领域 33。2021年，包括EDA和CAE在内的关键研发设计软件的本土渗透率显著偏低，均低于10% 33。领先的国际供应商，特别是ANSYS、西门子和达索，在2021年中国制造业CAE市场中合计占据了45.8%的显著市场份额 35。
+
+这种持续较低的本土市场份额和对进口高端CAE软件的严重依赖，凸显了中国实现“国产化替代”的关键战略必要性。这一推动力既出于经济考量（降低成本、培育本土产业），也出于国家安全考量（减少对外国技术的依赖，解决关键工业能力中的“卡脖子”问题） 33。CAE软件作为航空航天和汽车等战略性行业先进制造和研发的基础，被明确认定为本土能力不足的关键领域。中国政府对工业软件发展和应用的密集政策支持 33，以及对“自主创新”的强调，都是对这一战略挑战的直接、自上而下的回应。这表明发展本土CAE能力不仅仅是一个商业目标，更是一个国家优先事项。这种强烈的国家推动意味着政府将对本土CAE公司进行大量投资、研发补贴和优惠政策。中国市场可能会持续积极地努力实现现有技术的本地化，并开发全新的、高端的、复杂的仿真能力，以实现技术自给自足。
+
+### **中国结构仿真软件**
+
+* **霍莱沃 (Holly-Wave) \- RDSim：** 这是一款自主研发的国产三维电磁仿真软件。虽然其主要关注点是电磁学，但其在某些语境下被列为“结构工程”软件 36，表明其在涉及电磁场的结构问题或更广泛的CAE能力中的应用。RDSim采用多算法融合方法，实现各种电磁结构的高精度、高速仿真 37。其核心算法包括改进的矩量法、多层快速多极子求解器、积分方程直接求解器、CMA特征模求解器、高频求解器、有限元求解器和时域求解器 37。它还提供RCS成像、几何清理、脚本编写功能（Python）和庞大的天线库 37。  
+* **北京大学重庆大数据研究院 \- 北达飞易有限元仿真软件 (BeiDaFeiYi FEM Software)：** 这是一款新近亮相的国产有限元法（FEM）仿真软件，基于北京大学胡军教授团队原创的“胡-张元算法”开发 38。该算法以其能够高精度直接求解弹性结构近似应力而著称，更好地满足平衡方程和应力边界条件，并避免了传统基于位移的有限元方法中常见的“闭锁现象” 38。该软件包含结构力学仿真分析中的模型处理、属性分配、边界条件处理、求解和后处理等功能模块 38。目前，该软件正针对轴承行业进行开发，并计划未来与航空航天、汽车等高端装备制造领域进行深度合作 38。
+
+### **中国多体动力学仿真软件**
+
+* **十沣科技 (Tenfong) \- TF-DCAMS：** 十沣科技将其TF-DCAMS定位为其核心通用软件套件中的系统级多体动力学仿真软件 39。TF-DCAMS的一个突出特点是其独特的快速高精度柔性体建模能力，以及与控制系统集成的分析能力 39。它被设计用于汽车交通、航空航天、电子电器、装备制造和船舶海工等关键行业的广泛应用。其目的是预测机械系统的动态性能、运动范围、碰撞行为、峰值载荷和运行周期，最终帮助用户获得最优设计方案，提高产品性能，从而减少昂贵且耗时的物理原型试验 39。十沣科技的整体平台强调多物理场耦合和“热插拔”软件架构，这表明其采用了现代、敏捷的开发方法 39。  
+* **中国本土多体动力学软件的系统级与柔性体动力学：** 尽管全球MBD市场由老牌厂商主导，但像十沣科技这样的中国开发商正在战略性地专注于高级功能，例如具有高精度柔性体建模和与控制系统直接耦合的集成系统级MBD。这种方法旨在满足对集成解决方案至关重要的特定高端工业需求。考虑到高端CAE整体较低的本土市场份额，中国公司在直接与全球领导者在整个广泛产品组合中竞争面临巨大挑战。取而代之的是，一种更务实的策略正在出现：专注于在对复杂高价值行业（如汽车、航空航天、机器人）至关重要的特定子领域开发尖端能力，这些领域对高级仿真的国内需求正在迅速增长。对柔性体动力学（比刚体动力学计算要求更高）和控制集成的强调表明其目标是复杂的应用。十沣科技提到的“热插拔”软件架构 39也指向一种现代开发理念，旨在快速迭代、模块化和定制化，这可能是在响应特定行业需求方面的竞争优势。这表明了国产化替代的战略性和针对性方法，侧重于关键技术需求领域，并利用现代软件工程原则加速开发和部署。在这些高价值、利基领域的成功可以为更广泛的市场渗透奠定坚实基础，并为中国的工业软件独立性做出重大贡献。
+
+### **中国流体仿真软件**
+
+* **积鼎科技 (Jiding Technology) \- VirtualFlow：** 这是一款国内自主研发的通用计算流体力学（CFD）软件 41。VirtualFlow提供全面的流体分析能力，包括单相/多相、层流/湍流、可压缩/不可压缩流以及传热相变过程的仿真 41。它强调精确稳定的计算结果，通过IST网格技术实现，该技术可自动生成坐标，减少前处理工作量，并提供更准确稳定的计算 41。该软件还结合了基于MPI的并行算法、先进的网格技术、模型和离散格式，显著加快了计算速度 41。VirtualFlow的应用领域广泛，涵盖核工业、石油/天然气、化工/过程工业、水利工程、环境/市政以及汽车/轨道交通等 41。  
+* **十沣科技 (Tenfong) \- TF-QFLUX：** 作为十沣科技核心通用软件的一部分，TF-QFLUX是一款通用流体动力学仿真软件 40。十沣科技的流体动力学产品线还包括基于LBM的TF-Lattice、可压缩空气动力学仿真软件TF-CFlow和光滑粒子动力学仿真软件TF-SPH 40。十沣科技的仿真软件整体特点是高效（支持GPU加速，适应国产HPC生态，AI算法与传统数值算法融合）、便捷（全中文界面，本地化工作流设计，符合国内行业操作习惯）、精准（计算精度满足工程要求，仿真结果与实验数据一致，媲美国际通用工业软件标准）、专业（自主研发核心求解器，顶尖国际专家研发团队，丰富的行业洞察和应用）和全面（多物理场耦合仿真，全生命周期解决方案，覆盖多类工业应用） 40。  
+* **中国CFD开发商的重点：** 中国CFD开发商正专注于提供全面的分析能力（多相流、复杂流体、传热）和高效、准确的解决方案。他们战略性地强调本地化工作流程、用户友好性以及与国内HPC生态系统的兼容性，以应对“国产化替代”的紧迫性，目标是达到与国际标准相当的性能。鉴于中国在高端工业软件领域的国产化率仍然较低，本土CFD开发商面临着巨大的机遇和挑战。为了克服与国际巨头的技术差距，他们正在采取一种务实的策略，即不仅关注核心算法的突破，还注重软件的易用性和与本土工业实践的契合度。例如，积鼎科技的VirtualFlow强调IST网格技术和MPI并行算法以提高效率和精度 41，而十沣科技则突出其全中文界面和对国内HPC生态的适应性 40。这种双重关注——技术性能与本地化适应性——对于赢得中国市场的信任和份额至关重要。通过提供与本土工业习惯相符的解决方案，并积极与国内的硬件和操作系统（如麒麟操作系统）进行兼容性适配 41，这些公司正在逐步建立其竞争优势。这表明中国正在努力构建一个完整的工业软件生态系统，而不仅仅是开发单一产品。
+
+## **结论**
+
+全球仿真软件市场是一个由少数大型国际公司主导的复杂且快速发展的领域，这些公司通过提供集成化、多物理场和基于云的解决方案来维持其市场领导地位。Ansys、达索系统、西门子、MathWorks和Hexagon等公司通过其广泛的产品组合和战略性收购，占据了结构、多体动力学、流体和系统仿真市场的主导地位。市场增长受到对效率、成本效益和加速产品开发需求的推动，其中云技术和高性能计算（HPC）的进步正在使仿真更加普及和高效。
+
+与此同时，中国正在积极推动其本土仿真软件产业的发展，以实现技术自给自足并减少对外国技术的依赖。尽管中国本土解决方案在高端CAE市场中的份额仍然较小，但像十沣科技、积鼎科技、霍莱沃和北京大学重庆大数据研究院这样的公司正在结构、多体动力学和流体仿真领域取得显著进展。这些本土开发商正专注于开发先进功能，如高精度柔性体建模、与控制系统的集成以及适应本土HPC生态系统，以满足中国高价值产业的特定需求。
+
+未来，仿真软件市场将继续见证云原生解决方案的普及、人工智能和机器学习的深度融合以及数字孪生技术的广泛应用。这些趋势将使仿真能力从设计阶段扩展到整个产品生命周期，实现持续优化和预测性维护。对于中国而言，持续的研发投入、与本土工业需求的紧密结合以及构建完整的工业软件生态系统将是实现“国产化替代”并最终在全球仿真软件市场中占据更重要地位的关键。
+
+#### **引用的著作**
+
+1. Structural Simulation | SIMULIA \- Dassault Systèmes, 访问时间为 六月 17, 2025， [https://www.3ds.com/products/simulia/structural-simulation](https://www.3ds.com/products/simulia/structural-simulation)  
+2. Ansys Motion | Multibody Dynamics Simulation Software, 访问时间为 六月 17, 2025， [https://www.ansys.com/products/structures/ansys-motion](https://www.ansys.com/products/structures/ansys-motion)  
+3. Simscape Multibody \- MATLAB \- MathWorks, 访问时间为 六月 17, 2025， [https://www.mathworks.com/products/simscape-multibody.html](https://www.mathworks.com/products/simscape-multibody.html)  
+4. In-Depth Analysis and Rankings of Best CFD Software, 访问时间为 六月 17, 2025， [https://bestcfdsoftware.com/](https://bestcfdsoftware.com/)  
+5. Ansys Fluent | Fluid Simulation Software, 访问时间为 六月 17, 2025， [https://www.ansys.com/products/fluids/ansys-fluent](https://www.ansys.com/products/fluids/ansys-fluent)  
+6. Simcenter Amesim | Siemens Software \- Siemens PLM, 访问时间为 六月 17, 2025， [https://plm.sw.siemens.com/en-US/simcenter/systems-simulation/amesim/](https://plm.sw.siemens.com/en-US/simcenter/systems-simulation/amesim/)  
+7. AnyLogic: Simulation Modeling Software Tools & Solutions, 访问时间为 六月 17, 2025， [https://www.anylogic.com/](https://www.anylogic.com/)  
+8. Structural Analysis & Simulation Software \- Ansys, 访问时间为 六月 17, 2025， [https://www.ansys.com/products/structures](https://www.ansys.com/products/structures)  
+9. MSC Adams \- Wikipedia, 访问时间为 六月 17, 2025， [https://en.wikipedia.org/wiki/MSC\_Adams](https://en.wikipedia.org/wiki/MSC_Adams)  
+10. MSC Adams | Hexagon Software | 2B Digital UAE, 访问时间为 六月 17, 2025， [https://2bdigital.ae/3d-software/hexagon/msc-adams/](https://2bdigital.ae/3d-software/hexagon/msc-adams/)  
+11. System dynamics | Hexagon, 访问时间为 六月 17, 2025， [https://hexagon.com/solutions/system-dynamics](https://hexagon.com/solutions/system-dynamics)  
+12. SimScale: Simulation Software | Engineering AI in the Cloud, 访问时间为 六月 17, 2025， [https://www.simscale.com/](https://www.simscale.com/)  
+13. Computational Fluid Dynamics (CFD) Simulation Software | SimScale, 访问时间为 六月 17, 2025， [https://www.simscale.com/product/cfd/](https://www.simscale.com/product/cfd/)  
+14. COMSOL Multiphysics® Software \- Understand, Predict, and Optimize, 访问时间为 六月 17, 2025， [https://www.comsol.com/comsol-multiphysics](https://www.comsol.com/comsol-multiphysics)  
+15. Autodesk CFD Software | Get Prices & Buy Official CFD, 访问时间为 六月 17, 2025， [https://www.autodesk.com/products/cfd/overview](https://www.autodesk.com/products/cfd/overview)  
+16. CFD Software | Solve the Toughest CFD Problems \- FLOW-3D, 访问时间为 六月 17, 2025， [https://www.flow3d.com/products/flow-3d/](https://www.flow3d.com/products/flow-3d/)  
+17. SOLIDWORKS 3d Fluid Simulation & Flow Modeling Software, 访问时间为 六月 17, 2025， [https://www.solidworks.com/product/solidworks-flow-simulation](https://www.solidworks.com/product/solidworks-flow-simulation)  
+18. Simcenter STAR-CCM+ CFD software \- Siemens PLM, 访问时间为 六月 17, 2025， [https://plm.sw.siemens.com/en-US/simcenter/fluids-thermal-simulation/star-ccm/](https://plm.sw.siemens.com/en-US/simcenter/fluids-thermal-simulation/star-ccm/)  
+19. Model complex multiphase applications with Simcenter STAR-CCM+ | Siemens Software, 访问时间为 六月 17, 2025， [https://resources.sw.siemens.com/en-US/fact-sheet-accurately-model-complex-industrial-multiphase-applications-with-confidence/](https://resources.sw.siemens.com/en-US/fact-sheet-accurately-model-complex-industrial-multiphase-applications-with-confidence/)  
+20. CFD Simulation Solutions \- Altair, 访问时间为 六月 17, 2025， [https://altair.com/altair-cfd](https://altair.com/altair-cfd)  
+21. Altair CFD | Computational Fluid Dynamic Tool \- TrueInsight, 访问时间为 六月 17, 2025， [https://www.trueinsight.io/altair-cfd](https://www.trueinsight.io/altair-cfd)  
+22. Cae Market Size, Share, Growth, Drivers and Forecast 2034, 访问时间为 六月 17, 2025， [https://www.marketresearchfuture.com/reports/cae-market-22591](https://www.marketresearchfuture.com/reports/cae-market-22591)  
+23. CAE Market Size, Growth | Report \[2025-2033\], 访问时间为 六月 17, 2025， [https://www.globalgrowthinsights.com/market-reports/cae-market-110983](https://www.globalgrowthinsights.com/market-reports/cae-market-110983)  
+24. Simulation Software Statistics and Facts (2025) \- Market.us Scoop, 访问时间为 六月 17, 2025， [https://scoop.market.us/simulation-software-statistics/](https://scoop.market.us/simulation-software-statistics/)  
+25. www.macrotrends.net, 访问时间为 六月 17, 2025， [https://www.macrotrends.net/stocks/charts/ANSS/ansys/revenue\#:\~:text=ANSYS%20revenue%20for%20the%20twelve,a%208.33%25%20increase%20from%202021.](https://www.macrotrends.net/stocks/charts/ANSS/ansys/revenue#:~:text=ANSYS%20revenue%20for%20the%20twelve,a%208.33%25%20increase%20from%202021.)  
+26. pitchbook.com, 访问时间为 六月 17, 2025， [https://pitchbook.com/profiles/company/41167-54\#:\~:text=Financials%20Summary,month%20revenue%20of%20%246.75B.](https://pitchbook.com/profiles/company/41167-54#:~:text=Financials%20Summary,month%20revenue%20of%20%246.75B.)  
+27. How Siemens Digital Industries Software Exceeded Annual Growth Targets by 100+%, 访问时间为 六月 17, 2025， [https://www.highspot.com/success-stories/siemens/](https://www.highspot.com/success-stories/siemens/)  
+28. stockanalysis.com, 访问时间为 六月 17, 2025， [https://stockanalysis.com/quote/sto/HEXA.B/revenue/\#:\~:text=Hexagon%20AB%20Revenue,B%2C%20down%20%2D0.63%25.](https://stockanalysis.com/quote/sto/HEXA.B/revenue/#:~:text=Hexagon%20AB%20Revenue,B%2C%20down%20%2D0.63%25.)  
+29. Autodesk Revenue 2016-2025 \- Bullfincher, 访问时间为 六月 17, 2025， [http://bullfincher.io/companies/autodesk/revenue](http://bullfincher.io/companies/autodesk/revenue)  
+30. 2023 EN Company Fact Sheet \- MathWorks, 访问时间为 六月 17, 2025， [https://www.mathworks.com/content/dam/mathworks/fact-sheet/2023-company-factsheet-8-5x11-8282v23.pdf](https://www.mathworks.com/content/dam/mathworks/fact-sheet/2023-company-factsheet-8-5x11-8282v23.pdf)  
+31. companiesmarketcap.com, 访问时间为 六月 17, 2025， [https://companiesmarketcap.com/altair-engineering/revenue/\#:\~:text=According%20to%20Altair%20Engineering%20's,were%20of%20%240.61%20Billion%20USD.](https://companiesmarketcap.com/altair-engineering/revenue/#:~:text=According%20to%20Altair%20Engineering%20's,were%20of%20%240.61%20Billion%20USD.)  
+32. 国内CAE 龙头，兼具高壁垒与高成长性, 访问时间为 六月 17, 2025， [https://pdf.dfcfw.com/pdf/H3\_AP202411271641086251\_1.pdf?1732720283000.pdf](https://pdf.dfcfw.com/pdf/H3_AP202411271641086251_1.pdf?1732720283000.pdf)  
+33. 工业软件：质变，从国产化到全链路至规模化, 访问时间为 六月 17, 2025， [https://pdf.dfcfw.com/pdf/H3\_AP202408171639323393\_1.pdf](https://pdf.dfcfw.com/pdf/H3_AP202408171639323393_1.pdf)  
+34. 2024年工业软件行业分析：质变，从国产化到全链路至规模化 \- 智能制造, 访问时间为 六月 17, 2025， [http://www.idnovo.com.cn/news/1248058](http://www.idnovo.com.cn/news/1248058)  
+35. 2022年中国CAx行业深度研究报告, 访问时间为 六月 17, 2025， [https://pdf.dfcfw.com/pdf/H3\_AP202210201579303314\_1.pdf](https://pdf.dfcfw.com/pdf/H3_AP202210201579303314_1.pdf)  
+36. Best Structural Engineering Software in China of 2025 \- Reviews & Comparison, 访问时间为 六月 17, 2025， [https://sourceforge.net/software/structural-engineering/china/](https://sourceforge.net/software/structural-engineering/china/)  
+37. 三维电磁仿真软件-CAE仿真软件-仿真设计软件-仿真设计软件/测量 ..., 访问时间为 六月 17, 2025， [https://www.holly-wave.com/products/simulation-design-software/rdsim/3demss/](https://www.holly-wave.com/products/simulation-design-software/rdsim/3demss/)  
+38. 新一代有限元工业仿真软件亮相-新华网, 访问时间为 六月 17, 2025， [http://www.xinhuanet.com/tech/20231016/2ae7394428d2460ba69602878c156a87/c.html](http://www.xinhuanet.com/tech/20231016/2ae7394428d2460ba69602878c156a87/c.html)  
+39. TF-DCAMS 机械系统动力学仿真软件 \- 十沣, 访问时间为 六月 17, 2025， [https://www.tenfong.cn/solid/5](https://www.tenfong.cn/solid/5)  
+40. 十沣, 访问时间为 六月 17, 2025， [https://www.tenfong.cn/](https://www.tenfong.cn/)  
+41. 积鼎科技\_多相流体仿真软件及仿真分析服务\_国产CFD/DEM, 访问时间为 六月 17, 2025， [https://simpop.cn/](https://simpop.cn/)
