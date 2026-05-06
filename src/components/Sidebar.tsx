@@ -19,7 +19,7 @@ export default function Sidebar() {
             {categories.map((cat) => (
               <li key={cat}>
                 <Link
-                  href={`/categories/${encodeURIComponent(cat)}`}
+                  href={`/categories/${cat}`}
                   className="text-sm no-underline hover:opacity-70 transition-opacity"
                   style={{ color: "var(--color-text)" }}
                 >

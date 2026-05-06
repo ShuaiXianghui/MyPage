@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export function generateStaticParams() {
   return getAllCategories().map((cat) => ({
-    name: encodeURIComponent(cat),
+    name: cat,
   }));
 }
 
 export default function CategoryPage({ params }: { params: { name: string } }) {
   const category = decodeURIComponent(params.name);
-  const posts = getPostsByCategory(params.name);
+  const posts = getPostsByCategory(category);
 
   return (
     <div>

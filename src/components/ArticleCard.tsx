@@ -20,7 +20,7 @@ export default function ArticleCard({ post }: { post: PostMeta }) {
         <time>{post.date}</time>
         <span>·</span>
         <Link
-          href={`/categories/${encodeURIComponent(post.category)}`}
+          href={`/categories/${post.category}`}
           className="no-underline hover:opacity-70"
           style={{ color: "var(--color-muted)" }}
         >

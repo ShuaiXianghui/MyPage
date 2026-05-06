@@ -71,7 +71,7 @@ export function getAllCategories(): string[] {
 export function getPostsByCategory(category: string): PostMeta[] {
   const posts = getAllPosts();
   return posts.filter(
-    (post) => post.category === decodeURIComponent(category)
+    (post) => post.category === category
   );
 }
 

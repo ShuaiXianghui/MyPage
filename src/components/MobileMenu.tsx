@@ -47,7 +47,7 @@ export default function MobileMenu() {
                 {categories.map((cat) => (
                   <li key={cat}>
                     <Link
-                      href={`/categories/${encodeURIComponent(cat)}`}
+                      href={`/categories/${cat}`}
                       className="text-base no-underline"
                       style={{ color: "var(--color-text)" }}
                       onClick={() => setOpen(false)}

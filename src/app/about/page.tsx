@@ -16,7 +16,7 @@ export default function AboutPage() {
           你好，欢迎来到我的个人博客。我是一个热爱技术和写作的开发者。
         </p>
         <p>
-          在这里我会分享编程经验、技术教程、项目心得以及生活中的思考。
+          在这里我会分享技术教程、项目心得以及生活中的思考。
           写作帮助我更好地整理知识，也希望这些内容对你有帮助。
         </p>
         <p>
@@ -32,8 +32,8 @@ export default function AboutPage() {
           联系方式
         </h2>
         <ul className="text-sm space-y-2" style={{ color: "var(--color-muted)" }}>
-          <li>GitHub: github.com/yourusername</li>
-          <li>Email: yourname@example.com</li>
+          <li>GitHub: github.com/ShuaiXianghui</li>
+          <li>Email: 598637930@qq.com</li>
         </ul>
       </div>
     </div>

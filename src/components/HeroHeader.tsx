@@ -20,7 +20,7 @@ export default function HeroHeader({ title, date, category, tags }: HeroHeaderPr
           <time>{date}</time>
           <span className="mx-2">·</span>
           <Link
-            href={`/categories/${encodeURIComponent(category)}`}
+            href={`/categories/${category}`}
             className="no-underline hover:opacity-80"
             style={{ color: "rgba(255,255,255,0.85)" }}
           >
