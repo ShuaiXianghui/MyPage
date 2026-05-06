@@ -23,10 +23,10 @@ export function getAllPosts(): PostMeta[] {
   const posts = filenames
     .filter((filename) => filename.endsWith(".md"))
     .map((filename) => {
-      const slug = filename.replace(/\.md$/, "");
       const filePath = path.join(postsDirectory, filename);
       const fileContent = fs.readFileSync(filePath, "utf-8");
       const { data } = matter(fileContent);
+      const slug = data.slug || filename.replace(/\.md$/, "");
 
       return {
         slug,
@@ -41,10 +41,25 @@ export function getAllPosts(): PostMeta[] {
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-export function getPostBySlug(slug: string): Post | null {
-  const filePath = path.join(postsDirectory, `${slug}.md`);
+function resolveFileBySlug(slug: string): string | null {
+  const filenames = fs.readdirSync(postsDirectory);
+  for (const filename of filenames) {
+    if (!filename.endsWith(".md")) continue;
+    const filePath = path.join(postsDirectory, filename);
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const { data } = matter(fileContent);
+    const fileSlug = data.slug || filename.replace(/\.md$/, "");
+    if (fileSlug === slug) {
+      return filePath;
+    }
+  }
+  return null;
+}
 
-  if (!fs.existsSync(filePath)) {
+export function getPostBySlug(slug: string): Post | null {
+  const filePath = resolveFileBySlug(slug);
+
+  if (!filePath) {
     return null;
   }
 
